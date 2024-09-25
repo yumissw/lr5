@@ -18,5 +18,5 @@ func main() {
 	c := Circle{radius: 7}
 
 	fmt.Println("радиус: ", c.radius)
-	fmt.Printf("площадь: %.2f", c.Area())
+	fmt.Printf("площадь: s %.2f", c.Area())
 }
