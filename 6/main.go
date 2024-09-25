@@ -23,6 +23,5 @@ func func1(s Stringer) {
 
 func main() {
 	b := Book{"Бедная Лиза", "Н.М. Карамзин"}
-	//fmt.Println(b.String())
 	func1(b)
 }
