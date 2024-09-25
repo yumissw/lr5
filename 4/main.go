@@ -26,14 +26,18 @@ func (c Circle) Area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
+func Area(s Shape) {
+	fmt.Printf("площадь: %.2f", s.Area())
+}
+
 func main() {
 	r := Rectangle{width: 5, height: 10}
 	c := Circle{radius: 7}
 
 	fmt.Println("длина прямоугольника: ", r.height)
 	fmt.Println("ширина прямоугольника: ", r.width)
-	fmt.Printf("площадь прямоугольника: %.2f\n", r.Area())
+	Area(r)
 
 	fmt.Println("\nрадиус круга: ", c.radius)
-	fmt.Printf("площадь круга: %.2f\n", c.Area())
+	Area(c)
 }

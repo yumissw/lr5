@@ -17,7 +17,12 @@ func (b Book) String() string {
 	return fmt.Sprintf("название: %s\nавтор: %s", b.Title, b.Author)
 }
 
+func func1(s Stringer) {
+	fmt.Println(s.String())
+}
+
 func main() {
 	b := Book{"Бедная Лиза", "Н.М. Карамзин"}
-	fmt.Println(b.String())
+	//fmt.Println(b.String())
+	func1(b)
 }
